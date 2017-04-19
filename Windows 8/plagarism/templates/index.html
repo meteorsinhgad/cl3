@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Plagarism test</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>Plagarism test</h1>
+            </div>
+            <div id="content">
+                <form method="post" action="{{ url_for('plagcheck') }}">
+                  <label for="inputtext">Enter the text to be checked</label>
+                  <textarea name="inputtext"></textarea></br>
+                  <input type="submit" />
+                </form>
+            </div>
+
+            </div>
+
+    </body>
+</html>

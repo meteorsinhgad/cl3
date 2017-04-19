@@ -1,0 +1,48 @@
+student@student-OptiPlex-3020:~$ sudo su
+[sudo] password for student: 
+root@student-OptiPlex-3020:/home/student/Documents# cd mongodb-linux-x86_64-3.0.6/
+root@student-OptiPlex-3020:/home/student/Documents/mongodb-linux-x86_64-3.0.6# cd bin/
+root@student-OptiPlex-3020:/home/student/Documents/mongodb-linux-x86_64-3.0.6/bin# ./mongo
+MongoDB shell version: 3.0.6
+connecting to: test
+Server has startup warnings: 
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] 
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] 
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] 
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] 
+> show dbs;
+local  0.078GB
+> show dbs;
+local  0.078GB
+mydb   0.078GB
+> use dbs;
+switched to db dbs
+> show collections;
+mycol
+system.indexes
+> db.mycol.find();
+{ "_id" : ObjectId("56a1a3cb848ec0076cfb7b4a"), "third" : " thinking..." }
+{ "_id" : ObjectId("56a1a3cb848ec0076cfb7b47"), "first" : " thinking..." }
+{ "_id" : ObjectId("56a1a3cb848ec0076cfb7b49"), "fourth" : " thinking..." }
+{ "_id" : ObjectId("56a1a3cb848ec0076cfb7b48"), "fifth" : " thinking..." }
+{ "_id" : ObjectId("56a1a3cb848ec0076cfb7b4b"), "second" : " thinking..." }
+{ "_id" : ObjectId("56a1a3cc848ec0076cfb7b4c"), "fifth" : " eating..." }
+{ "_id" : ObjectId("56a1a3cd848ec0076cfb7b4d"), "fifth" : " done eating and now thinking..." }
+{ "_id" : ObjectId("56a1a3cd848ec0076cfb7b4e"), "fourth" : " eating..." }
+{ "_id" : ObjectId("56a1a3ce848ec0076cfb7b4f"), "fourth" : " done eating and now thinking..." }
+{ "_id" : ObjectId("56a1a3ce848ec0076cfb7b50"), "third" : " eating..." }
+{ "_id" : ObjectId("56a1a3cf848ec0076cfb7b51"), "third" : " done eating and now thinking..." }
+{ "_id" : ObjectId("56a1a3cf848ec0076cfb7b52"), "second" : " eating..." }
+{ "_id" : ObjectId("56a1a3d0848ec0076cfb7b53"), "second" : " done eating and now thinking..." }
+{ "_id" : ObjectId("56a1a3d0848ec0076cfb7b54"), "first" : " eating..." }
+{ "_id" : ObjectId("56a1a3d1848ec0076cfb7b55"), "first" : " done eating and now thinking..." }
+> exit
+bye
+root@student-OptiPlex-3020:/home/student/Documents/mongodb-linux-x86_64-3.0.6/bin# 
+
+
